@@ -123,8 +123,7 @@ public static class LegacyProcessor
 
         if (printToConsole)
         {
-            Console.WriteLine($"[Receipt] Doc: {docId}, Client: {clientName}, Email: {clientEmail}");
-            Console.WriteLine($"Date: {createdAt}, Total: {subtotal:F2}, Status: {next}");
+            // Вилучено пряме логування в термінал з доменної логіки
         }
 
         return Math.Round(subtotal, 2);
