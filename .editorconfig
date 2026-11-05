@@ -1,0 +1,38 @@
+# Top-most EditorConfig file
+root = true
+
+# Всі файли
+[*]
+indent_style = space
+indent_size = 4
+end_of_line = lf
+charset = utf-8
+trim_trailing_whitespace = true
+insert_final_newline = true
+max_line_length = 100
+
+# Файли C#
+[*.cs]
+csharp_new_line_before_open_brace = all
+csharp_new_line_before_else = true
+csharp_new_line_before_catch = true
+csharp_new_line_before_finally = true
+csharp_prefer_braces = true:warning
+
+dotnet_naming_rule.private_fields_with_underscore.symbols = private_fields
+dotnet_naming_rule.private_fields_with_underscore.style = prefix_underscore_camel_case
+dotnet_naming_rule.private_fields_with_underscore.severity = warning
+
+dotnet_naming_symbols.private_fields.applicable_kinds = field
+dotnet_naming_symbols.private_fields.applicable_accessibilities = private, internal_and_private
+dotnet_naming_symbols.private_fields.required_modifiers = 
+
+dotnet_naming_style.prefix_underscore_camel_case.required_prefix = _
+dotnet_naming_style.prefix_underscore_camel_case.capitalization = camel_case
+
+dotnet_diagnostic.SA1633.severity = none
+dotnet_diagnostic.SA1101.severity = none
+dotnet_diagnostic.SA1200.severity = none
+dotnet_diagnostic.SA1309.severity = none
+dotnet_diagnostic.SA0001.severity = none
+dotnet_diagnostic.SA1028.severity = warning

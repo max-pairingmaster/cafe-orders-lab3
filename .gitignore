@@ -1,0 +1,13 @@
+## .NET / C#
+bin/
+obj/
+*.suo
+*.userosscache
+*.sln.docstates
+.vscode/
+.idea/
+.DS_Store
+
+# власні винятки проєкту
+*.user # локальні налаштування IDE розробника
+data/*.local.json # локальні конфігураційні файли або тестові бази даних
